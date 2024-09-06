@@ -1,0 +1,126 @@
+.contact {
+  margin: 80px auto;
+  max-width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background: #eaecf6;
+  fill: #eaecf6;
+  /* background-color: aqua; */
+}
+.section-xl-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  width: 50%;
+}
+.section-xl-100 h3 {
+  line-height: 0.88889;
+  font-size: 45px;
+  font-weight: 700;
+  color: #000;
+}
+.section-xl-100 form {
+  margin-top: 30px;
+}
+.section-xl-100 form input,
+select {
+  width: 100%;
+  height: auto;
+  min-height: 52px;
+  padding: 14px 19px;
+  border: 0 solid;
+  border-radius: 0;
+  -webkit-appearance: none;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fff;
+}
+input,
+select,
+textarea {
+  outline: 0;
+}
+select,
+textarea {
+  width: 100%;
+  color: #9f9f9f;
+}
+textarea {
+  height: 166px;
+  min-height: 52px;
+  max-height: 249px;
+  resize: vertical;
+  padding: 14px 19px;
+  border: 0 solid;
+  border-radius: 0;
+  -webkit-appearance: none;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.input-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 30px;
+}
+.imgbox {
+  margin-top: -40px;
+}
+.submit-btnC {
+  color: #fff;
+  background-color: #cca876;
+  border-color: #cca876;
+  display: block;
+  min-width: 30px;
+  width: 100%;
+  text-align: center;
+  max-width: 100%;
+  padding: 9px 40px;
+  font-size: 17px;
+  line-height: 1.71429;
+  font-weight: 700;
+  border-radius: 0;
+  border: 2px solid #cca876;
+  transition: 0.3s ease-out;
+  margin-bottom: 5px;
+}
+.submit-btnC {
+  background-color: #cca876;
+}
+.selection__arrow::before {
+  position: absolute;
+  top: 50%;
+  font-weight: 400;
+  margin-top: -10px;
+  right: 0;
+  height: 22px;
+  line-height: 22px;
+  content: "\f107";
+  font-family: fontawesome;
+  font-size: 22px;
+  color: #cca876;
+}
+.custom-select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+select {
+  appearance: none; /* Hides the default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+}
+
+.custom-select-wrapper::after {
+  content: "▼"; /* Custom arrow */
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure the arrow doesn't interfere with the select */
+}

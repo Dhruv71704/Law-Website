@@ -1,0 +1,11 @@
+{
+  top: 0px;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  position: fixed;
+  height: 70px;
+  background-color: rgba(25, 25, 25, 0.8);
+  z-index: 1000;
+  color: white;
+  fill: white;
+}

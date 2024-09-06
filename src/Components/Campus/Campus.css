@@ -1,0 +1,30 @@
+.campus {
+  margin: 80px auto;
+  width: 90%;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.gallery img {
+  width: 23%;
+  border-radius: 10px;
+}
+.campus .dark-btn {
+  background: #fee2b3;
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    width: 48%;
+  }
+}

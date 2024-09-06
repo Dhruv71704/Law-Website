@@ -1,0 +1,36 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Adjust the spacing between cards */
+  padding: 20px; /* Optional padding */
+}
+
+.gtco-practice-area-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 2rem;
+}
+.gtco-practice-area-item .gtco-icon {
+  width: 100px;
+}
+
+.gtco-copy h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #000;
+}
+
+.gtco-copy p {
+  font-size: 1em;
+  color: #666;
+}
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}

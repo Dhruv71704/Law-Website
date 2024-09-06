@@ -1,0 +1,109 @@
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.7vw; /* Adjust the spacing between cards */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.icon-box {
+  text-align: center;
+  padding: 67px 40px 61px;
+  transition: 0.33s all ease;
+  position: relative;
+}
+.icon-box .box-top,
+.icon-box .box-body {
+  position: relative;
+  will-change: transform;
+  transition: 0.33s all ease;
+  -webkit-filter: blur(0);
+}
+.icon-box .box-icon {
+  min-height: 46px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.icon-lg {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 50px;
+}
+.box-header {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.box-desc {
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #9f9f9f;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+.icon-box .divider {
+  max-width: 100%;
+  margin: 13px auto;
+  transition: 0.33s all ease-in-out;
+  background: #cca876;
+  fill: #cca876;
+  width: 49px;
+  height: 2px;
+}
+.icon-box:hover .divider {
+  width: 55%;
+}
+/* .icon-box:hover {
+  outline: 2px solid #cca876;
+} */
+.icon-box .box-body {
+  max-width: 100%;
+}
+
+.icon-box::before,
+.icon-box::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 35px);
+  height: calc(100% - 35px);
+  border: 1px solid #e5e7e9;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  pointer-events: none;
+  transition: 0.33s all ease;
+}
+.icon-box::before {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px;
+}
+.icon-box::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1px 1px 0;
+}
+.icon-box:hover::before,
+.icon-box:hover::after {
+  width: 100%;
+  height: 100%;
+  border-color: #cca876;
+}
