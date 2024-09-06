@@ -4,9 +4,8 @@
   display: flex;
   align-content: center;
   justify-content: space-around;
-  background: #eaecf6;
   fill: #eaecf6;
-  /* background-color: aqua; */
+  background-color: #eaecf6;
 }
 .section-xl-100 {
   padding-top: 100px;
@@ -75,7 +74,7 @@ textarea {
   border-color: #cca876;
   display: block;
   min-width: 30px;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   max-width: 100%;
   padding: 9px 40px;
@@ -86,9 +85,12 @@ textarea {
   border: 2px solid #cca876;
   transition: 0.3s ease-out;
   margin-bottom: 5px;
+  cursor: pointer;
 }
-.submit-btnC {
-  background-color: #cca876;
+.submit-btnC:hover {
+  color: #fff;
+  background-color: #b49465;
+  border-color: #b49465;
 }
 .selection__arrow::before {
   position: absolute;
